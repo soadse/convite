@@ -18,6 +18,9 @@ body {
     sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, #ffd6e6 0%, #ffe8f1 60%, #fff6fb 100%);
+  background-image: url(imgs/papel_de_parede01.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .invite {
@@ -169,6 +172,7 @@ body {
   align-items: center;
   img {
     width: 100%;
+    filter: drop-shadow(10px 10px 10px pink);
   }
 }
 @media (max-width: 560px) {
