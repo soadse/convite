@@ -184,7 +184,8 @@ a {
     text-decoration: none;
 }
 a:nth-of-type(1) {
-  color: var(--purple);
+  color: var(--magenta);
+  font-size: 1.5rem;
 }
 .address {
     position: relative;
