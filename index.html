@@ -3,7 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aniversário da Antonela - 3 anos</title>
+  <meta name="theme-color" content="#ffc7de">
+  <title>Aniversário da Antonella - 3 anos</title>
+  <link rel="shortcut icon" href="imgs/hello_kitty-08-removebg-preview.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,7 +17,7 @@
       <div class="rainbow" aria-hidden="true"></div>
 
       <header class="header">
-        <h1 id="title" class="title">Aniversário da Antonela</h1>
+        <h1 id="title" class="title">Aniversário da Antonella</h1>
         <p class="subtitle">3 anos</p>
       </header>
 
@@ -37,9 +39,22 @@
 
       <footer class="footer">
         <p>Esperamos por você!</p>
+        <a href="pdf/Convite.pdf" download="Convite.pdf">
+          <p>Clique aqui para baixar o convite personalizado.</p>
+        </a>
+        <audio id="musica" src="audio/parabens.mpeg" autoplay muted></audio>
         <span class="sr-only">Convite temático Hello Kitty com nuvens, arco-íris e balões.</span>
       </footer>
     </section>
   </main>
+
+  <script> 
+  window.addEventListener('load', function() {
+    const audio = document.getElementById('musica');
+    audio.muted = false;
+    audio.volume = 0.2;
+    audio.play();
+  });
+  </script>
 </body>
 </html>

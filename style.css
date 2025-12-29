@@ -208,6 +208,9 @@ a {
   margin-top: 12px;
   color: #a35abf;
   font-weight: 600;
+  a {
+    position: relative;
+  }
 }
 
 
