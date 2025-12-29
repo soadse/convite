@@ -136,6 +136,7 @@ body {
   font-weight: 600;
   color: var(--purple);
   margin-top: 4px;
+  margin-top: 30px;
 }
 
 .age-badge {
