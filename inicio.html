@@ -18,7 +18,7 @@
 
       <header class="header">
         <h1 id="title" class="title">Aniversário da Antonella</h1>
-        <p class="subtitle">3 aninhos</p>
+        <p class="subtitle animacao">3 aninhos</p>
       </header>
 
       <div class="age-badge" aria-label="Idade">Venha comemorar comigo meu 3º aniversário!</div>
@@ -54,6 +54,12 @@
     musica.muted = false;
     musica.volume = 0.1; 
     musica.play(); 
-    }); </script>
+    }); 
+    
+    window.addEventListener('beforeunload', () => { 
+      musica.pause(); 
+      musica.currentTime = 0; 
+    });
+    </script>
 </body>
 </html>
