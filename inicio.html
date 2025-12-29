@@ -42,19 +42,18 @@
         <a href="pdf/Convite.pdf" download="Convite.pdf">
           <p>Download do convite</p>
         </a>
-        <audio id="musica" src="audio/parabens.mpeg" autoplay muted></audio>
+        <audio src="audio/parabens.mpeg" id="musica" autoplay muted></audio>
         <span class="sr-only">Convite temático Hello Kitty com nuvens, arco-íris e balões.</span>
       </footer>
     </section>
   </main>
 
   <script> 
-  window.addEventListener('scroll', function() {
-    const audio = document.getElementById('musica');
-    audio.muted = false;
-    audio.volume = 0.2;
-    audio.play();
-  });
-  </script>
+  window.addEventListener('DOMContentLoaded', () => { 
+    const musica = document.getElementById('musica'); 
+    musica.muted = false;
+    musica.volume = 0.2; 
+    musica.play(); 
+    }); </script>
 </body>
 </html>

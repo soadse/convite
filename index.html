@@ -1,8 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffc7de" />
     <title>Aniversário da Antonella - 3 anos</title>
+    <link
+      rel="shortcut icon"
+      href="imgs/hello_kitty-08-removebg-preview.ico"
+      type="image/x-icon"
+    />
     <style>
       body {
         margin: 0;
@@ -12,6 +19,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
+        padding: 20px;
       }
       .container {
         text-align: center;
@@ -20,27 +28,50 @@
         padding: 40px;
         box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         max-width: 400px;
+        width: 100%;
       }
       h1 {
         color: #ff69b4;
         margin-bottom: 20px;
+        font-size: 1.8em;
       }
       p {
         color: #555;
         margin-bottom: 30px;
+        font-size: 1em;
       }
-      button {
+      a {
         background: #ff69b4;
         color: #fff;
         border: none;
-        padding: 15px 30px;
-        border-radius: 30px;
-        font-size: 18px;
+        padding: 10px 30px;
+        border-radius: 10px;
+        font-size: 1.1em;
         cursor: pointer;
         transition: 0.3s;
+        width: 100%;
+        max-width: 250px;
+        text-decoration: none;
       }
-      button:hover {
+      a:hover {
         background: #ff1493;
+      }
+
+      /* Responsividade */
+      @media (max-width: 600px) {
+        .container {
+          padding: 20px;
+        }
+        h1 {
+          font-size: 1.4em;
+        }
+        p {
+          font-size: 0.9em;
+        }
+        button {
+          font-size: 1em;
+          padding: 12px 20px;
+        }
       }
     </style>
   </head>
@@ -48,19 +79,8 @@
     <div class="container">
       <h1>Aniversário da Antonella</h1>
       <p>Bem-vindo! Clique abaixo para entrar na festa.</p>
-      <button onclick="entrar()">Entrar</button>
+      <a href="inicio.html" id="entrar">Entrar</a>
     </div>
-
-    <script>
-      function entrar() {
-        // Aqui você pode redirecionar para o site principal
-        window.location.href = "convite.html";
-        // ou iniciar música:
-        // document.getElementById('musica').play();
-      }
-    </script>
-
-    <!-- Música opcional -->
-    <audio id="musica" src="musica.mp3"></audio>
+    <audio id="musica" src="audio/parabens.mpeg" autoplay muted></audio>
   </body>
 </html>
