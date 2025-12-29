@@ -132,11 +132,10 @@ body {
 }
 .subtitle {
     position: relative;
-  font-size: 1.05rem;
+  font-size: 1.5rem;
   font-weight: 600;
   color: var(--purple);
   margin-top: 4px;
-  margin-top: 30px;
 }
 
 .age-badge {
@@ -158,7 +157,7 @@ body {
   font-size: 1.25rem;
   font-weight: 700;
   color: #cf1f60;
-  margin: 10px 0 18px;
+  margin: 10px;
 }
 
 .grid {
