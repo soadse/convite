@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffc7de">
+  <title>Aniversário da Antonella - 3 anos</title>
+  <link rel="shortcut icon" href="imgs/hello_kitty-08-removebg-preview.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="invite" aria-labelledby="title">
+    <section class="card" role="region" aria-label="Convite de aniversário">
+      <div class="sparkles" aria-hidden="true"></div>
+      <div class="cloud sm" aria-hidden="true"></div>
+      <div class="cloud md" aria-hidden="true"></div>
+      <div class="rainbow" aria-hidden="true"></div>
+
+      <header class="header">
+        <h1 id="title" class="title">Aniversário da Antonella</h1>
+        <p class="subtitle">3 aninhos</p>
+      </header>
+
+      <div class="age-badge" aria-label="Idade">Venha comemorar comigo meu 3º aniversário!</div>
+
+      <p class="cta">Domingo, 11 de janeiro, a partir das 14h.</p>
+
+      <div class="grid" aria-label="Informações do evento">
+        <img src="imgs/gif02.gif">
+      </div>
+
+      <a href="https://maps.app.goo.gl/y86t4jGM4S36mtro6" target="_blank" rel="external" class="link">
+        <div class="address" aria-label="Endereço">
+          <h3>Clique aqui para vizualizar o local da festa</h3>
+          <p>Rua Serra do Café, 37</p>
+          <p>Jd. Nova Vitória — Iguatemi</p>
+        </div>
+      </a>
+
+      <footer class="footer">
+        <p>Esperamos por você!</p>
+        <a href="pdf/Convite.pdf" download="Convite.pdf">
+          <p>Download do convite</p>
+        </a>
+        <audio id="musica" src="audio/parabens.mpeg" autoplay muted></audio>
+        <span class="sr-only">Convite temático Hello Kitty com nuvens, arco-íris e balões.</span>
+      </footer>
+    </section>
+  </main>
+
+  <script> 
+  window.addEventListener('scroll', function() {
+    const audio = document.getElementById('musica');
+    audio.muted = false;
+    audio.volume = 0.2;
+    audio.play();
+  });
+  </script>
+</body>
+</html>
