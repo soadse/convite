@@ -40,7 +40,7 @@
       <footer class="footer">
         <p>Esperamos por você!</p>
         <a href="pdf/Convite.pdf" download="Convite.pdf">
-          <p>Download do convite</p>
+          <p class="animacao">Download do convite</p>
         </a>
         <audio src="audio/parabens.mpeg" id="musica" autoplay muted></audio>
         <span class="sr-only">Convite temático Hello Kitty com nuvens, arco-íris e balões.</span>
@@ -52,7 +52,7 @@
   window.addEventListener('DOMContentLoaded', () => { 
     const musica = document.getElementById('musica'); 
     musica.muted = false;
-    musica.volume = 0.2; 
+    musica.volume = 0.1; 
     musica.play(); 
     }); </script>
 </body>

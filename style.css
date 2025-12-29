@@ -214,6 +214,19 @@ a {
   }
 }
 
+.animacao {
+  animation: cor 1s infinite linear;
+}
+@keyframes cor {
+  0%,
+  100% {
+    color: var(--magenta);
+  }
+  50% {
+    color: var(--pink);
+  }
+}
+
 
 
 /* Acessibilidade */
