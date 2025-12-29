@@ -5,7 +5,7 @@
   --pink: #ffc7de;
   --pink-dark: #ff7aa2;
   --magenta: #ff2c74;
-  --purple: #9b6bd3;
+  --purple: #7e379b;
   --yellow: #ffd86b;
   --cloud: #ffffff;
   --text: #3c2a3a;
@@ -183,6 +183,9 @@ body {
 a {
     text-decoration: none;
 }
+a:nth-of-type(1) {
+  color: var(--purple);
+}
 .address {
     position: relative;
     text-align: center;
@@ -209,9 +212,12 @@ a {
 .footer {
   text-align: center;
   margin-top: 12px;
-  color: #a35abf;
   font-weight: 600;
   a {
+    position: relative;
+  }
+  p {
+    color: var(--purple);
     position: relative;
   }
 }
