@@ -203,6 +203,8 @@ a:nth-of-type(1) {
 
 .animacao {
   animation: cor 1s infinite linear;
+  text-decoration: underline;
+  font-size: 1.3rem;
 }
 @keyframes cor {
   0%,
