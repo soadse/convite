@@ -18,7 +18,8 @@ body {
     sans-serif;
   color: var(--text);
   background: linear-gradient(180deg, #ffd6e6 0%, #ffe8f1 60%, #fff6fb 100%);
-  background-image: url(imgs/papel_de_parede04.png);
+  background-image: url(imgs/papel_de_parede05.png);
+  background-repeat: repeat 10;
   background-size: cover;
 }
 
