@@ -97,30 +97,6 @@ body {
   left: 88px;
 }
 
-.rainbow {
-  position: absolute;
-  bottom: -30px;
-  left: -30px;
-  width: 360px;
-  height: 180px;
-  border-radius: 180px 180px 0 0;
-  background: conic-gradient(
-    from 180deg,
-    var(--magenta),
-    var(--magenta) 20%,
-    var(--purple) 20%,
-    var(--purple) 40%,
-    #66d1ff 40%,
-    #66d1ff 60%,
-    #7be495 60%,
-    #7be495 80%,
-    var(--yellow) 80%,
-    var(--yellow) 100%
-  );
-  mask: radial-gradient(200px 120px at 50% 100%, transparent 52%, black 53%);
-  opacity: 0.25;
-}
-
 
 
 .header {
