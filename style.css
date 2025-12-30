@@ -163,6 +163,7 @@ a {
 }
 a:nth-of-type(1) {
   text-shadow: 10px 10px 10px pink;
+  color: var(--purple);
   font-size: 1.5rem;
 }
 .address {
